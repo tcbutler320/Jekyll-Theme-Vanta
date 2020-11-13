@@ -1,4 +1,5 @@
-#GlobeBackground {
+
+#VantaBackground {
     --animate-duration: 5s;
     position: absolute;
     display: block;
@@ -56,3 +57,88 @@
     opacity: .7;
 }
 
+
+
+
+.vanta-theme-wave {
+
+    --animate-duration: 10s;
+
+    .navbar {
+        background-color: transparent;
+    }
+
+    a {
+        color: white;
+    }
+
+    .jumbotron {
+        background-color: transparent;
+
+    }
+
+    .display-4 {
+        color: white;
+    }
+
+    .lead  {
+        color: white;
+    }
+
+    .my-4 {
+        color: white;
+    }
+    .navbar-brand  {
+        color: white;
+        font-family: Lobster;
+    }
+    
+    .nav-item {
+        color: white;
+    }
+
+    .card {
+        background-color: transparent;
+        //opacity: .2;
+    }
+
+    hr {
+        background-color: white;
+    }
+
+    a,p,h1,h2,h3,h4,h5,h6 {
+        color:white;
+    }
+
+    h1 {
+        font-family: Lobster;
+    }
+
+
+    .footer {
+        background-color: transparent;
+
+        a,p,h1,h2,h3,h4,h5,h6 {
+            color:white;
+
+        }
+    }
+    
+    
+}
+
+
+.trans--grow{
+    -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+    transition: width 1s  ease-out;
+    width : 0%;
+}
+
+.grow{
+    width:100%;
+}
+
+
+#dark {
+    background-color: black;
+}

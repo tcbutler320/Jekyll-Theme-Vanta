@@ -1,0 +1,149 @@
+{% if site.vanta-theme == "wave" %}
+<div class="animate__animated animate__fadeIn" id="VantaBackground"></div>
+
+<div class="vanta-theme-wave container animate__animated animate__delay-1s animate__fadeInRight" id="slow">
+  <div class="row row-cols-2">
+    <div class="col">
+        <div class="card mt-5 border-0" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="vanta-theme-wave container animate__animated animate__delay-2s animate__fadeInRight" id="slow">
+  <div class="row row-cols-2">
+    <div class="col">
+        <div class="card mt-5 border-0" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% else %}
+<div class="animate__animated animate__fadeIn" id="VantaBackground"></div>
+
+<div class="container animate__animated animate__delay-1s animate__fadeInRight" id="slow">
+  <div class="row row-cols-2">
+    <div class="col">
+        <div class="card mt-5 border-0" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="container animate__animated animate__delay-2s animate__fadeInRight" id="slow">
+  <div class="row row-cols-2">
+    <div class="col">
+        <div class="card mt-5 border-0" style="width: 50%;">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if site.vanta %}
+  {% if site.vanta-theme == "globe" %}
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js "></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#VantaBackground",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 600.00,
+            minWidth: 600.00,
+            scale: 1.20,
+            scaleMobile: 1.00,
+            color: 0xfc6d9c,
+            color2: 0xb673e6,
+            size: 2.00,
+            backgroundColor: 0xffffff
+        })
+    </script>
+    {% elsif site.vanta-theme == "net" %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+        <script>
+        VANTA.NET({
+        el: "#VantaBackground",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 600.00,
+        minWidth: 600.00,
+        scale: 1.20,
+        size: 2.00,
+        scaleMobile: 1.00,
+        color: 0xfcfcfc,
+        backgroundColor: 0x0
+        })
+        </script>
+    {% elsif site.vanta-theme =="dots" %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+            <script>
+            VANTA.DOTS({
+            el: "#VantaBackground",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 600.00,
+            minWidth: 600.00,
+            scale: 1.20,
+            size: 2.00,
+            color: 0x372414,
+            color2: 0xb57fbe,
+            backgroundColor: 0xffffff
+            })
+            </script>
+    {% elsif site.vanta-theme == "wave" %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+            <script>
+            VANTA.WAVES({
+            el: "#VantaBackground",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x0,
+            shininess: 34.00,
+            waveHeight: 30.50,
+            waveSpeed: 0.30,
+            zoom: 0.95
+            })
+            </script>
+    {% endif %}
+{% endif %}
